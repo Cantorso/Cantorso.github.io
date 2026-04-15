@@ -197,7 +197,7 @@
 
     function calculateBMI(weight, height){
       if(!weight || !height) return null;
-      return weight / (height * height);
+      return weight / (height/100 * height/100);
     }
 
     function interpretBMI(bmi){
